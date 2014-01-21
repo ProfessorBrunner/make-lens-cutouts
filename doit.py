@@ -84,7 +84,7 @@ if __name__ == '__main__':
             # Now loop over known lenses to look for them in current image
             for lens in lensPixels:
                 if lens[0] >= 0.0 and lens[0] < xMax:
-                    if lens[1] >- 0.0 and lens[1] < yMax:
+                    if lens[1] >= 0.0 and lens[1] < yMax:
                         
                         # We have a lens, so make the cutout
                         xl = int(lens[0] - delta) ; xh = xl + 2 * delta
